@@ -9,7 +9,7 @@ export default function Services()
         <>
         <Link href="/posts">Browse Blogs</Link>
 
-        <Todo />
+        {/* <Todo /> */}
         </>
     )
 }
