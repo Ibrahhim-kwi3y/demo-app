@@ -1,12 +1,14 @@
 import React from "react";
 
- const Docs=async ({params}: {params:{slug:string[]}})=>{
-    if (params.slug?.length===2){
-    return(<h1>Blog For Category {params.slug[0]} for title{params.slug[1]}</h1>)
+type tParams = Promise<{ slug: string[] }>;
+ const Docs=async (props: { params: tParams })=>{
+    const { slug } = await props.params;
+    if (slug?.length===2){
+    return(<h1>Blog For Category {slug[0]} for title{slug[1]}</h1>)
 }
-else if(params.slug?.length===1)
+else if(slug?.length===1)
 {
-    return <h1>Blog For Category {params.slug[0]}</h1>
+    return <h1>Blog For Category {slug[0]}</h1>
 }
 else
 {
