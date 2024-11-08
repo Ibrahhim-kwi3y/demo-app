@@ -1,4 +1,3 @@
-// Assuming params always contains an optional slug array
 import React from "react";
 
 interface PageProps {
