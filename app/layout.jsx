@@ -32,6 +32,9 @@ export default function RootLayout({ children }) {
           <Link  style={{margin:"8px",fontSize:"30px"}} href="/services">Services</Link>
         </nav>
         {children}
+        <footer style={{width:"100%",
+        height:"50px",
+          background:"#4aafca"}}>Footer</footer>
       </body>
     </html>
   );
